@@ -1,8 +1,14 @@
 # express-brute-redis-store
-Redis Store for Express Brute
+Redis adaptor for store adapter for the [express-brute](https://github.com/AdamPflug/express-brute)
 
+##### Installation
+
+via npm:
+```bash
 npm install --save express-brute-redis-store
+```
 
+##### Example
 
 ```javascript
 const RedisStore = require('express-brute-redis-store');
