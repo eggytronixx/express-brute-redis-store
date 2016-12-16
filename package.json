@@ -1,6 +1,6 @@
 {
   "name": "express-brute-redis-store",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "redis store for express-brute",
   "main": "index.js",
   "scripts": {
