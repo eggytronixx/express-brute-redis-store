@@ -1,5 +1,5 @@
 # express-brute-redis-store
-Redis adaptor for store adapter for the [express-brute](https://github.com/AdamPflug/express-brute)
+Redis store adapter for the [express-brute](https://github.com/AdamPflug/express-brute)
 
 ##### Installation
 
