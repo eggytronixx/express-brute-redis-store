@@ -2,13 +2,13 @@ const AbstractClientStore = require('express-brute/lib/AbstractClientStore');
 const redis = require('redis');
 
 
-class RateLimiterStore extends AbstractClientStore {
+class RedisStore extends AbstractClientStore {
 
     constructor(options) {
 
         super();
 
-        if (options instanceof RateLimiterStore) {
+        if (options instanceof RedisStore) {
 
             this.client = options.client;
             this.redisOptions = options.redisOptions;
@@ -18,12 +18,12 @@ class RateLimiterStore extends AbstractClientStore {
 
             if (options) {
 
-                options.settings = options.settings || RateLimiterStore.defaultOptions.settings;
-                options.redisOptions = options.redisOptions || RateLimiterStore.defaultOptions.redisOptions;
+                options.settings = options.settings || RedisStore.defaultOptions.settings;
+                options.redisOptions = options.redisOptions || RedisStore.defaultOptions.redisOptions;
 
             } else {
 
-                options = RateLimiterStore.defaultOptions
+                options = RedisStore.defaultOptions
 
             }
 
@@ -100,7 +100,7 @@ class RateLimiterStore extends AbstractClientStore {
 
 }
 
-RateLimiterStore.defaultOptions = {
+RedisStore.defaultOptions = {
     settings: { prefix: '' },
     redisOptions: {
         host: '127.0.0.1',
@@ -109,4 +109,4 @@ RateLimiterStore.defaultOptions = {
 };
 
 
-module.exports = RateLimiterStore;
+module.exports = RedisStore;
