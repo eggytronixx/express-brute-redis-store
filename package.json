@@ -1,0 +1,23 @@
+{
+  "name": "express-brute-redis-store",
+  "version": "1.0.0",
+  "description": "redis store for express-brute",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eggytronixx/express-brute-redis-store.git"
+  },
+  "author": "Edgar Nunes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eggytronixx/express-brute-redis-store/issues"
+  },
+  "homepage": "https://github.com/eggytronixx/express-brute-redis-store#readme",
+  "dependencies": {
+    "express-brute": "^1.0.1",
+    "redis": "^2.6.3"
+  }
+}
